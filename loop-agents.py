@@ -80,7 +80,7 @@ root_agent = SequentialAgent(
 
 async def main():
     print("--- 4. 루프 워크플로우 (Section 5) 실행 ---")
-    runner = InMemoryRunner(agent=root_agent, app_name="agents")
+    runner = InMemoryRunner(agent=root_agent)
     response = await runner.run_debug(
         "Write a short story about a lighthouse keeper who discovers a mysterious, glowing map"
     )
